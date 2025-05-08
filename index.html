@@ -55,7 +55,7 @@
             </div>
         
             <div class="right">
-              <img src="images/rhino.png" class="img">
+              <img src="images/rhino.png" class="img" alt="Side view of a rhino">
             </div>
           </div>
           <hr>
@@ -68,7 +68,7 @@
             <h1>01   THE LIFE OF A RHINO</h1>
             <br>
             <center>
-            <img src = "images/rhino_timeline/timeline.png" width = 90%>
+            <img src = "images/rhino_timeline/timeline.png" width = 90% alt ="a Figma file of a rhino from 1-5 points on a timeline, birth to horn consumption">
             </center>
             <hr>
 
@@ -79,7 +79,7 @@
             <h1>02   BEYOND THE RHINO</h1>
 
             <div class="image-text">
-              <img src="images/Dashboard 2.1.png" class="img">
+              <img src="images/Dashboard 2.1.png" class="img" alt="Graph of animlas in the horn/ivory trade">
               <div class="text">
                 <h2>Rhinos aren't the only ones impacted.</h2>
                 <p>Elephants are the most recognized victims, targeted for their ivory tusks. Narwhals, walruses, and hippopotamuses are also regularly hunted for ivory.</p>
@@ -92,7 +92,7 @@
             <h2> Let's look at some other animals affected by the tusk and horn trade. </h2>
             <br>
             <br>
-            <img src = "images/animal-cards.png" class = "img" width = 80%>
+            <img src = "images/animal-cards.png" class = "img" width = 80% alt="animals involved in horn/ivory trade card form">
             </center>
             <hr>
 
@@ -114,7 +114,7 @@
           </h2> 
           </i></p>
           <center>
-          <img src = "images/top 3 origins.png" width = 80%>
+          <img src = "images/top 3 origins.png" width = 80% alt="top 3 countries horns originate from">
           <!-- <p> <i> Data taken from CITES, the Convention on International Trade in Endangered Species of Wild Fauna and Flora. </i> -->
 
         </center>
@@ -290,8 +290,25 @@
       <p> While poaching can feel like a far away problem, it’s not just the consumption of whole tusks and horns that we need to worry about. </p>
       <div class = "container">
         <div class = "left">
-         
-          <img src = "images/trade objects 2.png" class = "img">
+          <h2> Horn/Tusk Trade Objects Year Over Year (1975-2024)
+          </h2>
+         <img src="images/legend_distributions.svg" alt="legend for chart">
+
+         <div id="observablehq-linechart-1aa86e1a"></div>
+
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+          <script type="module">
+          import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/8d1b11b3279b0450@464.js?v=4";
+          new Runtime().module(define, name => {
+            if (name === "linechart") return new Inspector(document.querySelector("#observablehq-linechart-1aa86e1a"));
+          });
+          </script>
+          
+          <p> 
+            Source: CITES Wildlife Reports Data
+          </p>
+</script>
         </div>
         <div class = "right">
           <p> 
