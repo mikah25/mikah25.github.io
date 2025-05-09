@@ -42,8 +42,9 @@
 
         <!-- Table of Contents -->
         <section id="hidden">
-          <div class="container">
-            <div class="left">
+          <img src="images/intro.png" width = 95%>
+          <!-- <div class="container"> -->
+            <!-- <div class="left">
               <h1>HIDDEN IN <br>PLAIN SIGHT</h1>
               <h2>Tracking the routes, <br>crimes, and costs of the <br>illegal horn and tusk trade.</h2>
               <br>
@@ -57,7 +58,7 @@
             <div class="right">
               <img src="images/rhino.png" class="img" alt="Side view of a rhino">
             </div>
-          </div>
+          </div> -->
           <hr>
         </section>
         
@@ -67,9 +68,14 @@
           <section id="life">
             <h1>01 &nbsp;&nbsp; THE LIFE OF A RHINO</h1>
             <br>
+            <br>
+
             <center>
-            <img src = "images/rhino_timeline/timeline.png" width = 90% alt ="a Figma file of a rhino from 1-5 points on a timeline, birth to horn consumption">
+            <img src = "images/timeline.png" height = 100% width = 80% alt ="a Figma file of a rhino from 1-5 points on a timeline, birth to horn consumption">
             </center>
+            <br>
+            <br>
+
             <hr>
 
         </section>
@@ -134,14 +140,14 @@
           </center>
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
               <!-- Visualization -->
-              <div id="observablehq-nodeCountryRoutes-529b0feb"></div>
-    
+              <div id="observablehq-nodeCountryRoutes-3329fad6"></div>
+
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
               <script type="module">
               import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-              import define from "https://api.observablehq.com/d/21f5b4578bef185b@882.js?v=4";
+              import define from "https://api.observablehq.com/d/21f5b4578bef185b@892.js?v=4";
               new Runtime().module(define, name => {
-                if (name === "nodeCountryRoutes") return new Inspector(document.querySelector("#observablehq-nodeCountryRoutes-529b0feb"));
+                if (name === "nodeCountryRoutes") return new Inspector(document.querySelector("#observablehq-nodeCountryRoutes-3329fad6"));
               });
               </script>
               </div>
@@ -190,7 +196,8 @@
 
           <section>
             <center>         
-                <img src = "images/trading_routes.png" width = 85%>
+                <img src = "images/trade_routes.png" width = 85%>
+                <p> </p>
               </center>   
 
             <br>
@@ -201,7 +208,7 @@
 
           <h2> What’s going on? </h2>
           <p> Although CITES wildlife reports data from 1975 to 2023, the data around importer reported amount and exporter reported amounts varies wildly, sometimes off by thousands of units.</p>
-        <img src = "images/discrepancies/Frame 61.png" class = "img">
+        <img src = "images/discrepancies.png" class = "img">
 
         <hr> 
 
@@ -212,33 +219,39 @@
           <br>
       <h2> Why is this still such a big problem?</h2>
       <p> While international legislation does appear to decrease horn and tusk trafficking, so long as a consumer market still exists for these products, the trade network will never be completely eradicated. These animals are still very much at risk.</p>
-    
+      
       <div class = "container">
         <div class = "left">
-          <h2>
-            Changes in Horn/Tusk Trade Objects Year Over Year (1975-2024)
-             </h2>
-          <br>
-         <br>
-          <img src="images/horn:tusk legend.svg" alt="legend for chart">
-          <br>
-          <br>
-          <div id="observablehq-animalsovertimelinechart-ec353572"></div>
-          
+         
+         <h2>
+          Changes in Horn/Tusk Trade Objects Year Over Year (1975-2024)
+           </h2>
+        <br>
+       <br>
+        <img src="images/horn_tusk_legend.svg" alt="legend for chart">
+        <br>
+        <br>
+        <div id="observablehq-animalsovertimelinechart-4700867d"></div>
+
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
           <script type="module">
           import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-          import define from "https://api.observablehq.com/d/0a55c355f0d03ea8.js?v=4";
+          import define from "https://api.observablehq.com/d/0a55c355f0d03ea8@585.js?v=4";
           new Runtime().module(define, name => {
-            if (name === "animalsovertimelinechart") return new Inspector(document.querySelector("#observablehq-animalsovertimelinechart-ec353572"));
+            if (name === "animalsovertimelinechart") return new Inspector(document.querySelector("#observablehq-animalsovertimelinechart-4700867d"));
           });
           </script>
+         <p> 
+          Source: CITES Wildlife Reports Data
+        </p>
+          </div>
+                 
 
-        </div>
         <div class = "right">
           <p> 
             In the United States, one key piece of legislation was the Global Anti-Poaching Act. </p>
-            <p>This 2015  law was designed to protect wildlife by strengthening wildlife enforcement networks, 
+            <!-- <p> ←</p> -->
+            <p>This 2015 law was designed to protect wildlife by strengthening wildlife enforcement networks, 
               identifying key wildlife trafficking countries, and increasing penalties of wildlife trafficking to be equivalent with other trafficking forms.
           </p>
         </div>
@@ -343,6 +356,10 @@
 
         </div>
       </div>
+      <br>
+      <br>
+      <br>
+      
       <h2> See anything familiar? </h2>
       <p> 
         Smugglers commonly change the appearance of ivory or horns to trade, even embellishing common objects like a kettle.
@@ -353,6 +370,10 @@
 
       </center>
       <br>
+      <br>
+      <br>
+      <br>
+      
       <h2> Why you should donate your ivory</h2>
       <p> For future research!</p>
       <p> "Relinquished items are used by State and Government agencies for training wildlife enforcement and K9 units, DNA sequencing and geolocating, and their reference database; preventing future wildlife crimes."

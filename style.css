@@ -87,6 +87,8 @@ section {
   width: 100%;
   padding: 10px 40px;
   z-index: 1000;
+
+
 }
   
 .toc ul {
@@ -97,16 +99,19 @@ section {
   gap: 20px; /* space between items */
   justify-content: center; /* center horizontally */
   align-items: center;
+
 }
   
 .toc a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: ; */
+  /* text-shadow: 0 0 5px pink, 0 0 10px rgb(255, 255, 255); */
+
 }
   
 .toc a:hover {
-  color: rgb(202, 0, 0);
+  color: rgb(102, 191, 117);
 }
 
 hr {
