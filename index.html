@@ -125,7 +125,7 @@
           <br>
           <section>
 
-            <div class = "container">
+            <!-- <div class = "container">
               <div class = "left">
                 <h2> People are reporting more exports than imports, pointing to signs of illegal trade. </h2>
 
@@ -133,13 +133,13 @@
                   Exporter reported amounts
                 </u> varies wildly, sometimes off by thousands of units.</p>
                 </p>
-                <!-- <p> How is this done? One way is that “high-value wildlife products are hidden in carry-on or checked-in luggage, or on the passengers themselves at airports." (Save the Rhino) -->
-                </p>
+                <p> How is this done? One way is that “high-value wildlife products are hidden in carry-on or checked-in luggage, or on the passengers themselves at airports." (Save the Rhino) -->
+                <!-- </p>
               </div>
             <div class = "right">
             <img src = "images/Discrepancy scatter plot 1 1.png" class = "img">
           </div>
-        </div>
+        </div> -->
 
         
 
@@ -168,20 +168,10 @@
           
 
           <section>
-            <h2> These are most common trading routes. </h2>
-            <div class = "container">
-              <div class = "left">
-                
-                <p> Among the reported trade routes, these are most common trading routes in the dataset. 
-                </p>
-                <p> The top reported trade is
-                  between Great Britain and the US for a total of 624 trades in the dataset.</p>
-              </div>
-              <div class = "right">
-                <img src = "images/trading routes.png" height = 700vh>
-              </div>
+            <center>         
+                <img src = "images/trading_routes.png" width = 80%>
+              </center>   
 
-        </div>
         <h2> Exporter to Importer Graph Network</h2>
         <p> You can explore it yourself! Hover over each node to highlight the trades that country makes. </p>
 
@@ -199,8 +189,8 @@
           });
           </script>
           </div>
-          <h2> Discrepancies in the Data</h2>
-          <img src = "images/discrepancies/Frame 60.png" class = "img">
+          <h2> What’s going on? </h2>
+          <p> Although CITES wildlife reports data from 1975 to 2023, the data around importer reported amount and exporter reported amounts varies wildly, sometimes off by thousands of units.</p>
         <img src = "images/discrepancies/Frame 61.png" class = "img">
 
         <hr> 
@@ -215,7 +205,19 @@
     
       <div class = "container">
         <div class = "left">
-          <img src = "images/changeovertime.png" class = "img">
+          <img src="images/horn:tusk legend.svg">
+
+          <div id="observablehq-animalsovertimelinechart-781e9a01"></div>
+          <p>Credit: <a href="https://observablehq.com/d/0a55c355f0d03ea8@524">InfoViz Final Project Animations by My Workspace</a></p>
+
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+          <script type="module">
+          import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/0a55c355f0d03ea8@524.js?v=4";
+          new Runtime().module(define, name => {
+            if (name === "animalsovertimelinechart") return new Inspector(document.querySelector("#observablehq-animalsovertimelinechart-781e9a01"));
+          });
+          </script>
         </div>
         <div class = "right">
           <p> 
@@ -237,24 +239,16 @@
 
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
         <!-- Visualization -->
-        <div id="observablehq-animalVis-7d03fec7"></div>
-        
-        <!-- Credit -->
-        
-      </div>
-      
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-      
-      <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/91ce6c77b11c644c@419.js?v=4";
-        
-        new Runtime().module(define, name => {
-          if (name === "animalVis") {
-            return new Inspector(document.querySelector("#observablehq-animalVis-7d03fec7"));
-          }
-        });
-      </script>
+        <div id="observablehq-isotypes-09749e57"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/0a55c355f0d03ea8@525.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "isotypes") return new Inspector(document.querySelector("#observablehq-isotypes-09749e57"));
+});
+</script>
       
       
       <hr>
