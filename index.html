@@ -110,11 +110,15 @@
           <p> Wildlife traffickers rely on intricate webs of transportation routes and logistics networks to smuggle goods from their place of origin to consumer markets, sometimes in distant countries. </p>
           <p> Let’s take a look at some of these trade routes... ⤵</p>
           <br> 
-          <h2> Where Illegal Wildlife Products Start Their Journey
           </h2> 
           </i></p>
           <center>
+            <h2> Where Illegal Wildlife Products Start Their Journey
+
             <br>
+            <br>
+            <br>
+
           <img src = "images/origins.png" width = 70% alt="top 3 countries horns originate from">
           <!-- <p> <i> Data taken from CITES, the Convention on International Trade in Endangered Species of Wild Fauna and Flora. </i> -->
 
@@ -124,7 +128,23 @@
           <br>
           <br>
           <section>
-
+            <center>
+            <h2> Exporter to Importer Graph Network</h2>
+            <p> You can explore it yourself! Hover over each node to highlight the trades that country makes. </p>
+          </center>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+              <!-- Visualization -->
+              <div id="observablehq-nodeCountryRoutes-529b0feb"></div>
+    
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+              <script type="module">
+              import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+              import define from "https://api.observablehq.com/d/21f5b4578bef185b@882.js?v=4";
+              new Runtime().module(define, name => {
+                if (name === "nodeCountryRoutes") return new Inspector(document.querySelector("#observablehq-nodeCountryRoutes-529b0feb"));
+              });
+              </script>
+              </div>
             <!-- <div class = "container">
               <div class = "left">
                 <h2> People are reporting more exports than imports, pointing to signs of illegal trade. </h2>
@@ -147,7 +167,7 @@
           </section>
 
           <section>
-            <div class = "container">
+            <!-- <div class = "container">
               <div class = "left">
                 <p> <i> Exporter and Importer Quantities (1975-2023) </i></p>
                 <p> <i> Sum of reported quantities </i> </p>
@@ -160,35 +180,25 @@
 
               
           </div>
-        </div>
+        </div> -->
           
          
           </section>
 
-          
+          <br>
+          <br>
 
           <section>
             <center>         
-                <img src = "images/trading_routes.png" width = 80%>
+                <img src = "images/trading_routes.png" width = 85%>
               </center>   
 
-        <h2> Exporter to Importer Graph Network</h2>
-        <p> You can explore it yourself! Hover over each node to highlight the trades that country makes. </p>
+            <br>
+            <br>
 
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-          <p> Most frequent countries trading in horns/tusks</p>
-          <!-- Visualization -->
-          <div id="observablehq-nodeCountryRoutes-529b0feb"></div>
+            <br>
+            <br>
 
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-          <script type="module">
-          import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-          import define from "https://api.observablehq.com/d/21f5b4578bef185b@882.js?v=4";
-          new Runtime().module(define, name => {
-            if (name === "nodeCountryRoutes") return new Inspector(document.querySelector("#observablehq-nodeCountryRoutes-529b0feb"));
-          });
-          </script>
-          </div>
           <h2> What’s going on? </h2>
           <p> Although CITES wildlife reports data from 1975 to 2023, the data around importer reported amount and exporter reported amounts varies wildly, sometimes off by thousands of units.</p>
         <img src = "images/discrepancies/Frame 61.png" class = "img">
@@ -205,24 +215,31 @@
     
       <div class = "container">
         <div class = "left">
-          <img src="images/horn:tusk legend.svg">
-
-          <div id="observablehq-animalsovertimelinechart-781e9a01"></div>
-          <p>Credit: <a href="https://observablehq.com/d/0a55c355f0d03ea8@524">InfoViz Final Project Animations by My Workspace</a></p>
-
+          <h2>
+            Changes in Horn/Tusk Trade Objects Year Over Year (1975-2024)
+             </h2>
+          <br>
+         <br>
+          <img src="images/horn:tusk legend.svg" alt="legend for chart">
+          <br>
+          <br>
+          <div id="observablehq-animalsovertimelinechart-ec353572"></div>
+          
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
           <script type="module">
           import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-          import define from "https://api.observablehq.com/d/0a55c355f0d03ea8@524.js?v=4";
+          import define from "https://api.observablehq.com/d/0a55c355f0d03ea8.js?v=4";
           new Runtime().module(define, name => {
-            if (name === "animalsovertimelinechart") return new Inspector(document.querySelector("#observablehq-animalsovertimelinechart-781e9a01"));
+            if (name === "animalsovertimelinechart") return new Inspector(document.querySelector("#observablehq-animalsovertimelinechart-ec353572"));
           });
           </script>
+
         </div>
         <div class = "right">
           <p> 
             In the United States, one key piece of legislation was the Global Anti-Poaching Act. </p>
-            <p>This 2015  law was designed to protect wildlife by strengthening wildlife enforcement networks, identifying key wildlife trafficking countries, and increasing penalties of wildlife trafficking to be equivalent with other trafficking forms.
+            <p>This 2015  law was designed to protect wildlife by strengthening wildlife enforcement networks, 
+              identifying key wildlife trafficking countries, and increasing penalties of wildlife trafficking to be equivalent with other trafficking forms.
           </p>
         </div>
       </div>
@@ -263,15 +280,24 @@ new Runtime().module(define, name => {
           <h2> Promoting ethical alternatives</h2>
           <p>
             Some companies have taken action by developing synthetic horns which are “lab-made”, like the company Pembient.
+            <br>
+            <br>
+
+
+            <img src = "images/pembiant.png" class = "img">
+
           </p>
-          <img src = "images/pembiant.png" class = "img">
         </div>
         <div class = "right">
           <h2> Passing legislation </h2>
           <p> 
             States and countries are continuing to pass laws and monitor potential trade loopholes to deter poaching and trade.
+            <br>
+            <br>
+
+            <img src = "images/legislation_headline.png" class = "img">
+
           </p>
-          <img src = "images/legislation_headline.png" class = "img">
 
         </div>
       </div>
@@ -286,6 +312,9 @@ new Runtime().module(define, name => {
           <h2> Horn/Tusk Trade Objects Year Over Year (1975-2024)
           </h2>
          <img src="images/legend_distributions.svg" alt="legend for chart">
+         <br>
+         <br>
+
 
          <div id="observablehq-linechart-1aa86e1a"></div>
 
@@ -317,6 +346,7 @@ new Runtime().module(define, name => {
       <p> 
         Smugglers commonly change the appearance of ivory or horns to trade, even embellishing common objects like a kettle.
       </p>
+      <br> 
       <center>
         <img src = "images/stolen_carved_objects.png" width = 80%>
 
@@ -326,7 +356,7 @@ new Runtime().module(define, name => {
       <p> For future research!</p>
       <p> "Relinquished items are used by State and Government agencies for training wildlife enforcement and K9 units, DNA sequencing and geolocating, and their reference database; preventing future wildlife crimes."
       </p>
-      <p> The Oakland Zoo holds a dropoff event called Tosk the Tusk! You can donate any horn/tusk related item with their team starting right here: <a href="https://www.oaklandzoo.org/programs-and-events/toss-the-tusk"> Toss the Tusk </a> 
+      <p> The Oakland Zoo holds a dropoff event called Toss the Tusk! You can donate any horn/tusk related item with their team starting right here: <a href="https://www.oaklandzoo.org/programs-and-events/toss-the-tusk"> Toss the Tusk </a> 
       </p>
 
       <hr> 
